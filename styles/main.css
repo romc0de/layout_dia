@@ -166,6 +166,18 @@ p {
       opacity: 0.6;
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out; }
+    .nav__link:focus::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      top: 25px;
+      left: -1px;
+      background-color: #2060f6;
+      border-radius: 4px;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      opacity: 0.6; }
   .nav__item--active {
     position: relative; }
     .nav__item--active::after {
@@ -307,7 +319,8 @@ p {
     transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out, transform 0.4s ease-in-out;
     transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
     .slider__button-left:focus {
-      outline: none; }
+      outline: 0;
+      border: 1px solid #2060f6; }
     .slider__button-left:hover {
       -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
               box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -331,7 +344,8 @@ p {
     transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out, transform 0.4s ease-in-out;
     transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
     .slider__button-right:focus {
-      outline: none; }
+      outline: 0;
+      border: 1px solid #2060f6; }
     .slider__button-right:hover {
       -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
               box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -388,7 +402,8 @@ p {
   .button:hover {
     background-color: #144ed5; }
   .button:focus {
-    outline: none; }
+    outline: none;
+    background-color: #144ed5; }
 
 @media (max-width: 651px) {
   .button {
@@ -667,6 +682,8 @@ p {
     background-repeat: no-repeat;
     border-radius: 50%;
     cursor: pointer; }
+    .card__link:focus {
+      outline: 0; }
     .card__link::after {
       content: "Learn more";
       position: absolute;
@@ -687,6 +704,9 @@ p {
       transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out, background-color 0.4s ease-in-out;
       transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out, background-color 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out; }
     .card__link:hover::after {
+      width: 100%;
+      background-color: rgba(32, 96, 246, 0.1); }
+    .card__link:focus::after {
       width: 100%;
       background-color: rgba(32, 96, 246, 0.1); }
 
