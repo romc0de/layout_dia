@@ -1184,6 +1184,9 @@ p {
     transition: fill 0.4s ease-in-out; }
     .footer__soc-item:hover {
       fill: #2060f6; }
+    .footer__soc-item:focus {
+      outline: 0;
+      fill: #2060f6; }
   .footer__nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
